@@ -1,0 +1,228 @@
+project:
+  type: book
+  output-dir: _book 
+
+book:
+  title: "Python from Zero to Backend"
+  author: "Amakundi Samuel Bako"
+  date: "10/13/2026"
+  output-file: "python-backend-book" # no extension
+  cover-image: images/cover.png
+  chapters:
+    - index.qmd
+    - part: "foundations"
+      chapters: 
+      - chapters/foundations/01-What-Python-is-&-your-first-program.qmd
+      - chapters/foundations/02-Numbers-&-arithmetic.qmd
+      - chapters/foundations/03-Strings-working-with-text.qmd
+      - chapters/foundations/04-Variables-input-&-type-conversion.qmd
+      - chapters/foundations/05-Booleans-&-comparisons.qmd
+      - chapters/foundations/06-Making-decisions-if-elif-else.qmd
+      - chapters/foundations/07-Repeating-with-while.qmd
+      - chapters/foundations/08-for-loops-&-range.qmd
+      - chapters/foundations/09-Lists-a-first-look.qmd
+      - chapters/foundations/10-Dictionaries-a-first-look.qmd
+      - chapters/foundations/11-Functions-a-first-look.qmd
+      - chapters/foundations/12-Your-toolkit-folders-venv-pip-&-errors.qmd
+      - chapters/foundations/13-Mini-project-&-mastery-checkpoint.qmd
+    - part: "How Python Thinks"
+      chapters: 
+      - chapters/module_01/14-Everything-is-an-object.qmd
+      - chapters/module_01/15-Names-vs-objects.qmd
+      - chapters/module_01/16-Equal-to-versus-is.qmd
+      - chapters/module_01/17-Mutable-vs-immutable-objects.qmd
+      - chapters/module_01/18-Aliasing:When-two-names-share-one-list.qmd
+      - chapters/module_01/19-How-arguments-are-passed.qmd
+      - chapters/module_01/19-How-arguments-are-passed.qmd
+      - chapters/module_01/20-Namespace-&-scope:a-first-look.qmd
+      - chapters/module_01/21-Connecting-to-Django-and-the-ORM.qmd
+      - chapters/module_01/22-Mastery-checkpoint:predict-the-output.qmd
+
+    - part: "Functions in depth"
+      chapters: 
+      - chapters/module_02/23-What-a-function-really-is.qmd
+      - chapters/module_02/24-Positional-keyword-&-default-arguments.qmd
+      - chapters/module_02/25-Return-values.qmd
+      - chapters/module_02/26-*args-and-**kwargs.qmd
+      - chapters/module_02/27-Positional-only-&-keyword-only-parameters.qmd
+      - chapters/module_02/28-Mutable-arguments-&-side-effects.qmd
+      - chapters/module_02/29-Scope-inside-functions:global-&-nonlocal.qmd
+      - chapters/module_02/30-Annotations-docstrings-&-functions-as-values.qmd
+      - chapters/module_02/31-Mastery-checkpoint:a-utility-module.qmd
+
+    - part: "Collections, iteration & comprehensions"
+      chapters: 
+      - chapters/module_03/32-Lists-&-tuples-in-depth.qmd
+      - chapters/module_03/33-Sets-&-ranges.qmd
+      - chapters/module_03/34-Dictionaries-in-depth.qmd
+      - chapters/module_03/35-Looping-tools:enumerate-zip-&-unpacking.qmd
+      - chapters/module_03/36-List-comprehensions.qmd
+      - chapters/module_03/37-Dict-&-set-comprehensions.qmd
+      - chapters/module_03/38-Transforming-data:sorted-map-filter-any-all.qmd
+      - chapters/module_03/39-Iterables-vs-iterators.qmd
+      - chapters/module_03/40-Generators-&-lazy-evaluation.qmd
+      - chapters/module_03/41-Project-connection-&-mastery-checkpoint.qmd
+      
+    - part: "Exceptions and error handling"
+      chapters: 
+      - chapters/module_04/42-What-an-exception-is-&-how-it-propagates.qmd
+      - chapters/module_04/43-try-except:how-handlers-are-chosen.qmd
+      - chapters/module_04/44-else-&-finally.qmd
+      - chapters/module_04/45-Raising-exceptions-deliberately.qmd
+      - chapters/module_04/46-Designing-custom-exceptions.qmd
+      - chapters/module_04/47-Preserving-error-context.qmd
+      - chapters/module_04/48-Errors-in-a-backend-API-&-checkpoint.qmd
+
+    - part: "Files, data formats & the standard library"
+      chapters: 
+      - chapters/module_05/49-Paths-with-pathlib.qmd
+      - chapters/module_05/50-Reading-&-writing-text-files.qmd
+      - chapters/module_05/51-JSON.qmd
+      - chapters/module_05/52-CSV-files.qmd
+      - chapters/module_05/53-Dates-&-times.qmd
+      - chapters/module_05/54-Logging-&-checkpoint.qmd
+      
+    - part: "Object-oriented programming"
+      chapters: 
+      - chapters/module_06/55-classes-&-instances.qmd
+      - chapters/module_06/56-init-self-&-attributes.qmd
+      - chapters/module_06/57-methods:instances-,class-&-static.qmd
+      - chapters/module_06/58-Encapsulation-&-properties.qmd
+      - chapters/module_06/59-Inheritance-&-super().qmd
+      - chapters/module_06/60-Polymorphism-&-duck-typing.qmd
+      - chapters/module_06/61-Composition-vs-inheritance.qmd
+      - chapters/module_06/62-Generalization-with-abstract-base-classes.qmd
+      - chapters/module_06/63-Dataclasses-&-enums.qmd
+      - chapters/module_06/64-Project-connection-&-checkpoint.qmd
+      
+    - part: "Functions as first-class objects"
+      chapters: 
+      - chapters/module_07/65-Functions-are-objects.qmd
+      - chapters/module_07/66-Passing-functions-in:callbacks.qmd
+      - chapters/module_07/67-Returning-functions:factories.qmd
+      - chapters/module_07/68-Closures.qmd
+      - chapters/module_07/69-lambda-partial-&-checkpoint.qmd
+      
+    - part: "Decorators"
+      chapters: 
+      - chapters/module_08/70-What-a-decorator-is.qmd
+      - chapters/module_08/71-Writing-decorators-properly.qmd
+      - chapters/module_08/72-Decorators-with-arguments.qmd
+      - chapters/module_08/73-Decorators-in-classes:property-classmethod-staticmethod.qmd
+      - chapters/module_08/74-Registration-decorators.qmd
+      - chapters/module_08/75-Stacking-decorators-&-checkpoint.qmd
+    - part: "Context managers"
+      chapters: 
+      - chapters/module_09/76-The-with-statement.qmd
+      - chapters/module_09/77-Writing-a-context-manager-class.qmd
+      - chapters/module_09/78-contextlib.qmd
+      - chapters/module_09/79-Transaction-&-checkpoint.qmd
+
+    - part: "Type hints"
+      chapters: 
+      - chapters/module_10/80-Why-type-hint.qmd
+      - chapters/module_10/81-Annotating-variables-&-functions.qmd
+      - chapters/module_10/82-Optional-values-&-unions.qmd
+      - chapters/module_10/83-Running-mypy.qmd
+      - chapters/module_10/84-Typing-classes-callables-aliases.qmd
+      - chapters/module_10/85-Checkpoint:type-the-catalog.qmd
+
+    - part: "Advance typing"
+      chapters: 
+      - chapters/module_11/86-Generics.qmd
+      - chapters/module_11/87-Protocols-&-structural-typing.qmd
+      - chapters/module_11/88-TypeDict-literal-&-Final.qmd
+      - chapters/module_11/89-Overloads-ParamSpec-&-Self.qmd
+      - chapters/module_11/90-Checkpoint:a-typed-repository.qmd
+
+    - part: "The python data model"
+      chapters: 
+      - chapters/module_12/91-Dunder-methods.qmd
+      - chapters/module_12/92-Container-behaviour.qmd
+      - chapters/module_12/93-Hashing-&-equality.qmd
+      - chapters/module_12/94-Attribute-access.qmd
+      - chapters/module_12/95-Descriptors.qmd
+      - chapters/module_12/96-Metaclasses-&-init_subclass-&-checkpoint.qmd
+
+    - part: "Modules, packages & imports"
+      chapters: 
+      - chapters/module_13/97-Modules-&-import.qmd
+      - chapters/module_13/98-Packages.qmd
+      - chapters/module_13/99-How-Python-finds-imports.qmd
+      - chapters/module_13/100-Project-layout-&-packaging.qmd
+      - chapters/module_13/101-Django's-app-structure-&-checkpoint.qmd
+
+    - part: "Testing & debugging"
+      chapters: 
+      - chapters/module_14/102-Tests-with-pytest.qmd
+      - chapters/module_14/103-Fixtures-&-parametrize.qmd
+      - chapters/module_14/104-Testing-errors-edge-cases-&-fakes.qmd
+      - chapters/module_14/105-Debugging-with-breakpoint()-and-the-VS-Code-debugger.qmd
+      - chapters/module_14/106-Checkpoint.qmd
+
+    - part: "Integrated project: "
+      chapters: 
+      - chapters/module_15/107-Project-brief-&-architecture.qmd
+      - chapters/module_15/108-Domain-model.qmd
+      - chapters/module_15/109-Persistence-with-sqlite3.qmd
+      - chapters/module_15/110-Service-layer.qmd
+      - chapters/module_15/111-A-tiny-JSON-API-with-the-standard-library.qmd
+      - chapters/module_15/112-Errors-as-JSON-responses.qmd
+      - chapters/module_15/113-Testing-&-type-checking-the-whole-project.qmd
+      - chapters/module_15/114-What-Django-&-DRF-can-do.qmd
+
+    - part: "Python mastery assessment"
+      chapters: 
+      - chapters/module_16/115-Mastery-assessment-walkthrough.qmd
+      - chapters/module_16/116-Course-wrap-up-&-part-2-roadmap.qmd
+
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+appendices:
+  - appendices/a-setup.qmd 
+search: true 
+downloads: [pdf, epup]
+repo-url: https://github.com/amakundisamuelbako/Python_Zero_to_Backend_Course.git
+bibliography: references.bib
+number-depth: 2 
+
+execute: 
+  freeze: auto  # only re-run code in chapters i changed 
+  warning: false 
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    code-copy: true 
+    code-overflow: wrap 
+  pdf:
+    documentclass: scrreprt
+    toc: true 
+    toc-depth: 2 
+    fontsize: 10pt
+    mainfont: "Libertinus Serif"
+    sansfont: "Libertinus Sans"
+    monofont: "JetBrains Mono"
+    geometry: 
+      - paperwidth=6in 
+      - paperheight=9in 
+      - inner=0.875in
+      - outer=0.625in
+      - top=0.75in
+      - bottom=0.75in
+    code-block-bg: true 
+    code-block-border-left: "#1F4E79"
+    include-in-header: tex/preamble.tex
+    keep-tex: true
+  epub:
+    css: styles/epub.css 
+    cover-image: images/cover.png 
+
+
+
+
+

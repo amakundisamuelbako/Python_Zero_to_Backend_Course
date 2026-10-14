@@ -1,0 +1,4 @@
+_book/
+.quarto/
+.venv/
+*_files/
